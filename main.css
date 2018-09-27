@@ -34,11 +34,16 @@ nav[role="full-horizontal"] ul>li {
     cursor: pointer;
     float: left;
     margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 5px;
     text-align: center;
     color: black;
+}
+
+.hamburger {
+    font-size: 10px;
+    text-align: inherit;
 }
 
 nav[role="full-horizontal"] ul>li a {
@@ -65,10 +70,16 @@ nav[role="full-horizontal"] ul>li:hover {
     color: white;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 400px) {
     nav[role="full-horizontal"] ul>li {
         float: center;
         margin: 5px;
         width: 75%;
+    }
+}
+
+@media only screen and (min-width: 401px) {
+    .hamburger {
+        display: none;
     }
 }
