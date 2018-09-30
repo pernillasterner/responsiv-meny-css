@@ -1,33 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0%;
-    padding: 0%;
+    /* Du skriver utan % tecknet:) Och om du skriver margin och padding här kommer det bara gälla m och p för body och html inte andra taggar som p, div osv så lägg p och m under wildcard istället.*/
+    /* margin: 0%;
+    padding: 0%; */
 }
 
 p {
     font-size: 10px;
-    padding: 0%;
-    margin: -13%;
-    text-align: auto;
+    /* padding: 0%; /* Om du sätter padding 0 i wildcard behöver du inte skriva det här. Mindre kod = GOOD FOR YOU!!*/ */
+    /* margin: -13%; */ /* Den här har ingen funktion*/
+    /* text-align: auto; */
 }
 
 .navigation {
-    width: 100%;
-    font-family: lato, helvetica, sans-serif;
+    /* width: 100%; */ /* By default är div 100%*/
+    font-family: lato, helvetica, sans-serif; /*Font-family brukar man lägga i body-blocket*/
     background-color: lightgrey;
-    color: black; 
+    /* color: black; */
     text-align: center;
 }
 
 .menu {
-    margin: 0%;
+    /* margin: 0%;   */ /* Behövs inte här heller*/
 }
 
 .menu-item:hover {
@@ -46,7 +49,7 @@ p {
 
 .navigation .menu .menu-item {
     display: inline;
-    list-style: none;
+    /* list-style: none; */
 }
 
 .menu .menu-item a {
@@ -80,23 +83,23 @@ p {
     }
 
     .menu {
-        color: black;
-        padding: 0%;
-        margin: 0%;
+        /* color: black; */
+        /* padding: 0%; */
+        /* margin: 0%; */
         width: 50%;
-        text-align: center;
+        /* text-align: center; */
         display: inline-block;
     }
 
     .navigation .menu .menu-item {
         display: block;
-        list-style: none;
+        /* list-style: none; */
     }
 
     .menu-collapse {
         width: 100%;
         overflow: hidden;
-        text-align: center;
+        /* text-align: center; */
         height: 0vh;
         transition: all 499ms ease;
     }
@@ -104,8 +107,4 @@ p {
     .collapse {
         height: 30vh;
     }
-
-
-    
-
 }
